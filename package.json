@@ -1,0 +1,44 @@
+{
+  "name": "@softbind/react-slotty",
+  "version": "0.0.2",
+  "description": "React Slots",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "npx babel src --out-dir dist",
+    "preversion": "npm test",
+    "version": "npm run build && git add .",
+    "postversion": "git push && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SoftBind/react-slotty.git"
+  },
+  "keywords": [
+    "React",
+    "Slots"
+  ],
+  "author": "Sebastian Sobociński <sebastian@soft-bind.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SoftBind/react-slotty/issues"
+  },
+  "homepage": "https://github.com/SoftBind/react-slotty#readme",
+  "peerDependencies": {
+    "react": "^16.3.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.0",
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-proposal-class-properties": "^7.2.1",
+    "@babel/preset-env": "^7.2.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^23.6.0",
+    "jest": "^23.6.0",
+    "jest-dom": "^3.0.0",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-testing-library": "^5.3.2"
+  }
+}
